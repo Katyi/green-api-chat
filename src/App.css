@@ -1,0 +1,155 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 16px;
+  background: #bee3db;
+  background-image: url('../public/images/wh-back.png');
+  overflow-x: hidden;
+}
+.container {
+  /* max-width: 1240px; */
+  margin: 0 auto;
+  /* padding: 0 24px; */
+}
+h1 {
+  margin-top: 60px;
+  text-align: center;
+}
+.LoginForm {
+  margin: 50px auto;
+  width: 500px;
+}
+.loginFormDiv {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+label {
+  font-weight: bold;
+}
+input {
+  height: 40px;
+  margin-top: 5px;
+  padding: 2px;
+  border-radius: 10px;
+  background: white;
+}
+.phoneNumberInput {
+  height: 25px;
+}
+::placeholder {
+  text-align: center;
+}
+span {
+  color: red;
+  font-size: small;
+}
+.loginFormButton {
+  margin: 20px auto;
+  display: block;
+  padding: 3px;
+  font-weight: bold;
+  width: 170px;
+  height: 40px;
+  border-radius: 10px;
+  text-align: center;
+  border: 2px solid;
+  background: transparent;
+}
+.header {
+  background-color: rgb(247, 247, 247);
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.back-arrow-img {
+  margin-left: 10px;
+  background-color: transparent;
+}
+.usernameInHeader {
+  margin-left: 20px;
+  font-size: 30px;
+  font-weight: 700;
+}
+.chat-icon-btn {
+  background-color: transparent;
+  border: none;
+  margin-left: 50px;
+}
+.chat-icon-img {
+  background-color: transparent;
+  border: none;
+}
+.phoneNumber {
+  margin-left: 20px;
+  font-size: 30px;
+  font-weight: 700;
+}
+.mainFormButton {
+  /* margin: 20px auto; */
+  margin-left: 10px;
+  /* display: block; */
+  padding: 3px;
+  font-weight: bold;
+  width: 50px;
+  /* height: 40px; */
+  border-radius: 10px;
+  text-align: center;
+  /* border: 2px solid; */
+  background: transparent;
+}
+
+.messages {
+  position: absolute;
+  bottom: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
+  width: 100%;
+}
+.outMessage {
+  background-color: #c4f9c3;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: 0;
+}
+.inputMessage {
+  background-color: white;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.footer {
+  background-color: rgb(247, 247, 247);
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: absolute;
+  bottom: 0;
+  /* left: 0; */
+}
+.MessageForm {
+  display: flex;
+  align-items: center;
+}
+.messageInput {
+  width: 70vw;
+  padding-left: 10px;
+}
