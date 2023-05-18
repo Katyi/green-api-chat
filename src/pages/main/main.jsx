@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import {useForm} from 'react-hook-form';
 import { useNavigate } from 'react-router-dom';
+import img1 from '../../images/arrow_back.png';
+import img2 from '../../images/chat-icon.png';
+import img3 from '../../images/ok-icon.png';
+import img4 from '../../images/send-message.png';
 
 const Main = () => {
   const navigate = useNavigate();
@@ -120,11 +124,11 @@ const Main = () => {
       {/* Header */}
       <div className='header'>
         <div className='headerLeftSideIcons'>  
-        <img src="/images/arrow_back.png" className='back-arrow-img' onClick={()=>navigate('/')}/>
+        <img src={img1} className='back-arrow-img' onClick={()=>navigate('/')}/>
         {!showInput &&
           <button className='chat-icon-btn' onClick={()=>setShowInput(true)}>
             <div className='tooltip'>
-            <img src="/images/chat-icon.png" alt="" className='chat-icon-img'/>
+            <img src={img2} alt="" className='chat-icon-img'/>
             <span className="tooltiptext">Новый чат</span>
             </div>
           </button>
@@ -146,7 +150,7 @@ const Main = () => {
           />
           {errors.phone && <span>{errors.phone.message}</span>}
           <button className='chat-icon-btn'>
-            <img src="/images/ok-icon.png" alt="" className='chat-icon-img ok-icon'/>
+            <img src={img3} alt="" className='chat-icon-img ok-icon'/>
           </button>
          </form>
         }
@@ -197,7 +201,7 @@ const Main = () => {
           />
           {errors2.message && <span>{errors2.message.message}</span>}
           <button className='chat-icon-btn'>
-            <img src="/images/send-message.png" alt="" className='chat-icon-img' />
+            <img src={img4} alt="" className='chat-icon-img' />
           </button>
         </form>
       </div>
