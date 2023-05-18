@@ -7,7 +7,6 @@ const Login = () => {
   const navigate = useNavigate();
 
   const loginUser = data => {
-    console.log(data)
     localStorage.setItem("idInstance", data.idInstance);
     localStorage.setItem("apiTokenInstance", data.apiTokenInstance);
     reset();

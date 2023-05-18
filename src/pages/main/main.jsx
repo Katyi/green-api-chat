@@ -112,7 +112,7 @@ const Main = () => {
   };
   
   useEffect(() => {
-    setInterval(() => receiveMessage(ind), 20000);
+    setInterval(() => receiveMessage(ind), 5000);
   },[ind])
 
   return (
@@ -144,7 +144,6 @@ const Main = () => {
               validate: value=> !phoneNumberList.includes(value) || "Такой номер уже есть в списке!"
             })} 
           />
-          <br />
           {errors.phone && <span>{errors.phone.message}</span>}
           <button className='chat-icon-btn'>
             <img src="/images/ok-icon.png" alt="" className='chat-icon-img ok-icon'/>

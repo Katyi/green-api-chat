@@ -13,9 +13,7 @@ body {
   overflow-x: hidden;
 }
 .container {
-  /* max-width: 1240px; */
   margin: 0 auto;
-  /* padding: 0 24px; */
 }
 h1 {
   margin-top: 100px;
@@ -86,11 +84,6 @@ span {
   background-color: transparent;
   cursor: pointer;
 }
-/* .usernameInHeader {
-  margin-left: 20px;
-  font-size: 30px;
-  font-weight: 700;
-} */
 .chat-icon-btn {
   background-color: transparent;
   border: none;
@@ -104,7 +97,6 @@ span {
   color: gray;
   font-weight: bold;
   text-align: center;
-  /* Position the tooltip */
   position: absolute;
   margin-top: -10px;
   z-index: 1;
@@ -137,7 +129,6 @@ span {
   font-weight: 700;
 }
 .main {
-  /* background: #c4f9c3; */
   width: 100vw;
   display: flex;
   direction: row;
@@ -148,14 +139,12 @@ span {
   background: white;
   width: 20%;
   height: calc(100vh - 100px);
-  /* z-index: -1; */
 }
 .contact {
   margin-left: 30px;
   margin-right: 30px;
   padding-bottom: 20px;
   padding-top: 20px;
-  /* width:fit-content; */
   border-block-end: 2px solid gainsboro; 
   writing-mode: horizontal-tb;
   cursor: pointer;
